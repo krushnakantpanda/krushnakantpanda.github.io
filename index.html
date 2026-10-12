@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Krushnakanta Panda — Mechatronics · Robotics · Automation</title>
+<meta name="description" content="Krushnakanta Panda — Mechatronics engineering student at KIIT University, Bhubaneswar. Robotics, embedded systems & industrial automation. RGV · ASRS · Arduino quadruped · CNC plotter." />
+<meta name="theme-color" content="#0a0e0d" />
+<meta property="og:title" content="Krushnakanta Panda — Machines in Motion" />
+<meta property="og:description" content="Mechatronics · Robotics · Embedded Systems · Industrial Automation — portfolio & virtual quadruped lab." />
+<meta property="og:image" content="assets/img/profile.jpg" />
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230a0e0d"/><path d="M14 42 L24 22 h16 l10 20" stroke="%235df2b6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="46" r="4" fill="%23ffb454"/></svg>' />
+<link rel="preload" href="assets/fonts/Sora-800.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="dark">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ═══════════ BOOT LOADER ═══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__logo">KP<span>·</span>OS</div>
+    <div class="loader__bar"><i></i></div>
+    <div class="loader__log mono" id="loaderLog">initializing mechatronic interface…</div>
+  </div>
+</div>
+
+<!-- ═══════════ CURSOR (desktop) ═══════════ -->
+<div class="cursor" aria-hidden="true"><i class="cursor__dot"></i><i class="cursor__ring"></i></div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__progress" id="navProgress"></div>
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" data-magnetic>
+      <span class="nav__brand-mark">KP</span>
+      <span class="nav__brand-text">KRUSHNAKANTA<em>MECHATRONICS</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#lab" class="nav__link">Robo&nbsp;Lab</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#certifications" class="nav__link">Certs</a>
+    </nav>
+    <div class="nav__right">
+      <a class="btn btn--small btn--accent" href="#contact" data-magnetic>Get in touch</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ MOBILE MENU ═══════════ -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <nav class="mmenu__links" aria-label="Mobile">
+    <a href="#lab" class="mmenu__link"><em>01</em>Robo Lab</a>
+    <a href="#work" class="mmenu__link"><em>02</em>Work</a>
+    <a href="#experience" class="mmenu__link"><em>03</em>Experience</a>
+    <a href="#about" class="mmenu__link"><em>04</em>About</a>
+    <a href="#certifications" class="mmenu__link"><em>05</em>Certifications</a>
+    <a href="#contact" class="mmenu__link"><em>06</em>Contact</a>
+  </nav>
+  <div class="mmenu__foot mono">
+    <a href="https://github.com/krushnakantpanda" target="_blank" rel="noopener">GITHUB ↗</a>
+    <a href="mailto:krishnakantpanda25@gmail.com">EMAIL ↗</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="hero__glow hero__glow--a"></div>
+    <div class="hero__glow hero__glow--b"></div>
+    <div class="hero__scan"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+      <div class="hero__status reveal">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        OPEN TO INTERNSHIPS &amp; ENGINEERING ROLES
+      </div>
+
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.05s">Machines that</span>
+        <span class="reveal" style="--d:.14s"><em class="stroke">move</em><i class="dot-acc">.</i></span>
+        <span class="reveal" style="--d:.23s">Code that moves</span>
+        <span class="reveal" style="--d:.32s"><em class="stroke-alt">them</em><i class="dot-acc">.</i></span>
+      </h1>
+
+      <p class="hero__sub reveal" style="--d:.42s">
+        Hi, I’m <a class="inline-name" href="#about">Krushnakanta Panda ↗</a> — a mechatronics
+        engineering student at <strong>KIIT University, Bhubaneswar</strong>. I build where
+        <strong>mechanics, electronics and code</strong> collide: rail-guided vehicles,
+        quadruped robots and everything in between.
+      </p>
+
+      <div class="hero__cta reveal" style="--d:.52s">
+        <a href="#work" class="btn btn--accent" data-magnetic>Explore my work<span class="btn__arr">↓</span></a>
+        <a href="assets/Krushnakanta-Panda-Resume.pdf" class="btn btn--ghost" download data-magnetic>Résumé<span class="btn__arr">⇩</span></a>
+      </div>
+
+      <div class="hero__links mono reveal" style="--d:.62s">
+        <a href="https://github.com/krushnakantpanda" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        <a href="mailto:krishnakantpanda25@gmail.com">Email <span>↗</span></a>
+        <a href="tel:+916372565851">+91 63725 65851 <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal" style="--d:.3s">
+      <figure class="pcard" id="heroCard" data-tilt>
+        <span class="pcard__corner pcard__corner--tl"></span>
+        <span class="pcard__corner pcard__corner--tr"></span>
+        <span class="pcard__corner pcard__corner--bl"></span>
+        <span class="pcard__corner pcard__corner--br"></span>
+        <img src="assets/img/profile.jpg" alt="Portrait of Krushnakanta Panda" width="867" height="1156" />
+        <div class="pcard__scan" aria-hidden="true"></div>
+        <figcaption class="pcard__hud mono">
+          <span>KRUSHNAKANTA PANDA</span>
+          <span>MECHATRONICS · KIIT UNIVERSITY</span>
+        </figcaption>
+      </figure>
+      <div class="hero__chip hero__chip--a mono" aria-hidden="true">CGPA <b>8.1</b> / 10</div>
+      <div class="hero__chip hero__chip--b mono" aria-hidden="true">ASRS · RGV · HMEL</div>
+      <div class="hero__chip hero__chip--c mono" aria-hidden="true">BHADRAK → BHUBANESWAR</div>
+    </div>
+  </div>
+
+  <div class="hero__stats reveal" style="--d:.5s">
+    <div class="stat"><span class="stat__num" data-count="8.1" data-decimals="1">0.0</span><span class="stat__label">CGPA · KIIT</span></div>
+    <div class="stat"><span class="stat__num" data-count="45">0</span><span class="stat__label">Days on refinery floor</span></div>
+    <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Prototypes built</span></div>
+    <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label">Robots that walk</span></div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" data-marquee>
+      <span>ROBOTICS</span><i>◆</i><span>EMBEDDED C</span><i>◆</i><span>INDUSTRIAL AUTOMATION</span><i>◆</i><span>SOLIDWORKS</span><i>◆</i><span>ARDUINO</span><i>◆</i><span>MATLAB</span><i>◆</i><span>ASRS · RGV</span><i>◆</i><span>CNC</span><i>◆</i><span>8051 µC</span><i>◆</i>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 01 · ROBO DOG LAB ═══════════ -->
+<section class="section lab" id="lab">
+  <header class="section__head">
+    <div class="section__label mono reveal"><i>01</i>/ QUADRUPED LAB</div>
+    <h2 class="section__title reveal" style="--d:.1s">A robot dog, <br/>living in your <em class="stroke">browser</em>.</h2>
+    <p class="section__lede reveal" style="--d:.2s">
+      This virtual rig mirrors my real <a href="https://github.com/krushnakantpanda/Quadruped-Walking-Robot-Arduino-Dog-" target="_blank" rel="noopener">Arduino quadruped ↗</a> —
+      two-link IK legs, an adaptive stepping gait and a temperament of its own.
+      <strong>Tap anywhere in the pen</strong> (or press FOLLOW) and it will trot over to investigate.
+    </p>
+  </header>
+
+  <div class="lab__rig reveal">
+    <div class="rig">
+      <div class="rig__topbar mono">
+        <span class="rig__id">KP—04 · QUADRUPED VIRTUAL RIG</span>
+        <span class="rig__live"><i class="pulse-dot pulse-dot--amber"></i>LIVE / 4 LEGS × 2 DOF</span>
+      </div>
+
+      <div class="rig__stage">
+        <canvas id="dogCanvas" role="img" aria-label="Interactive simulation of a four-legged walking robot. Tap or click to give it a target."></canvas>
+        <div class="rig__hint mono" id="rigHint">TAP THE FLOOR — THE DOG WILL INVESTIGATE</div>
+      </div>
+
+      <div class="rig__panel">
+        <div class="rig__controls" role="group" aria-label="Dog controls">
+          <div class="rig__group">
+            <span class="rig__group-label mono">MODE</span>
+            <div class="seg" id="modeSeg">
+              <button class="seg__btn is-active" data-mode="roam">ROAM</button>
+              <button class="seg__btn" data-mode="follow">FOLLOW</button>
+              <button class="seg__btn" data-mode="sit">SIT</button>
+            </div>
+          </div>
+          <div class="rig__group">
+            <span class="rig__group-label mono">GAIT</span>
+            <div class="seg" id="gaitSeg">
+              <button class="seg__btn is-active" data-gait="trot">TROT</button>
+              <button class="seg__btn" data-gait="walk">WALK</button>
+            </div>
+          </div>
+          <div class="rig__group rig__group--slider">
+            <span class="rig__group-label mono">DRIVE <output id="speedOut">55%</output></span>
+            <input type="range" id="speedRange" min="10" max="100" value="55" aria-label="Walking speed" />
+          </div>
+        </div>
+
+        <div class="rig__readout mono" id="rigReadout" aria-hidden="true">
+          <div><label>STATE</label><b id="ro-state">ROAM</b></div>
+          <div><label>V</label><b id="ro-vel">0.00 m/s</b></div>
+          <div><label>HIPS</label><b id="ro-hips">—</b></div>
+          <div><label>KNEES</label><b id="ro-knees">—</b></div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="lab__side">
+      <p class="lab__note mono">/// DIGITAL TWIN</p>
+      <p>Every step you see is solved live with <strong>inverse kinematics</strong> — the same math
+      that drives real servo gait code on the robot.</p>
+      <a class="btn btn--ghost btn--small" href="https://github.com/krushnakantpanda/Quadruped-Walking-Robot-Arduino-Dog-" target="_blank" rel="noopener" data-magnetic>Real robot on GitHub<span class="btn__arr">↗</span></a>
+    </aside>
+  </div>
+</section>
+
+<!-- ═══════════ 02 · SELECTED WORK ═══════════ -->
+<section class="section work" id="work">
+  <header class="section__head">
+    <div class="section__label mono reveal"><i>02</i>/ SELECTED WORK</div>
+    <h2 class="section__title reveal" style="--d:.1s">Curiosity, put <br/>to <em class="stroke">work</em>.</h2>
+    <p class="section__lede reveal" style="--d:.2s">From the refinery floor to the workbench — a few ways I turn “what if” into “how”.</p>
+  </header>
+
+  <div class="work__filters mono reveal" style="--d:.25s" role="group" aria-label="Project filters">
+    <button class="chip is-active" data-filter="all">All work · 04</button>
+    <button class="chip" data-filter="robotics">Robotics</button>
+    <button class="chip" data-filter="industrial">Industrial</button>
+    <button class="chip" data-filter="fabrication">Fabrication</button>
+  </div>
+
+  <div class="work__grid">
+
+    <article class="proj reveal" data-cat="industrial" style="--d:0s">
+      <a class="proj__link" href="#" data-cert-open="hmel" aria-label="Open HMEL internship certificate">
+        <div class="proj__top mono"><span>P—01</span><span class="proj__cat">INDUSTRIAL</span></div>
+        <div class="proj__art proj__art--rgv" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path class="draw" d="M10 104 H190"/>
+            <path class="draw" d="M40 104 v-6 M70 104 v-6 M100 104 v-6 M130 104 v-6 M160 104 v-6"/>
+            <rect class="draw" x="58" y="52" width="84" height="34" rx="4"/>
+            <rect class="draw" x="70" y="30" width="60" height="22" rx="3"/>
+            <circle class="draw" cx="76" cy="96" r="8"/><circle class="draw" cx="124" cy="96" r="8"/>
+            <path class="draw" d="M100 30 v-14 m-8 6 h16"/>
+            <path class="draw blink" d="M150 44 l10 -10 m0 10 l-10 -10"/>
+            <path class="draw" d="M20 60 q10 -16 24 -6"/>
+          </svg>
+        </div>
+        <h3 class="proj__title">Rails, sensors, zero drama.</h3>
+        <p class="proj__sub mono">RAIL GUIDED VEHICLE + STACKER CRANE · HMEL GGSR</p>
+        <p class="proj__desc">45 days inside a refinery’s ASRS warehouse — documenting RGV traction drives, gearboxes,
+        positioning encoders and safety interlocks, and supporting preventive maintenance on the stacker cranes that keep pallets flying.</p>
+        <div class="proj__tags mono"><span>RGV</span><span>ASRS</span><span>PLC flow</span><span>Encoders</span></div>
+        <div class="proj__foot mono"><span>HMEL · Internship 2026</span><span class="proj__cta">VIEW CERTIFICATE ↗</span></div>
+      </a>
+    </article>
+
+    <article class="proj reveal" data-cat="robotics" style="--d:.08s">
+      <a class="proj__link" href="https://github.com/krushnakantpanda/Quadruped-Walking-Robot-Arduino-Dog-" target="_blank" rel="noopener" aria-label="Open Quadruped Walking Robot repository on GitHub">
+        <div class="proj__top mono"><span>P—02</span><span class="proj__cat">ROBOTICS</span></div>
+        <div class="proj__art" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect class="draw" x="60" y="44" width="70" height="26" rx="8"/>
+            <rect class="draw" x="130" y="36" width="26" height="20" rx="6"/>
+            <circle class="draw" cx="146" cy="44" r="2.5"/>
+            <path class="draw" d="M156 34 l6 -8"/>
+            <path class="draw" d="M70 70 l-8 18 l-4 12 M90 70 l-2 20 l-6 10"/>
+            <path class="draw" d="M112 70 l8 18 l4 12 M128 70 l2 20 l6 10"/>
+            <path class="draw" d="M54 100 h14 M76 100 h14 M110 100 h14 M134 100 h14"/>
+            <path class="draw" d="M60 50 l-14 -8"/>
+          </svg>
+        </div>
+        <h3 class="proj__title">Four legs, one gait brain.</h3>
+        <p class="proj__sub mono">QUADRUPED WALKING ROBOT — “ARDUINO DOG”</p>
+        <p class="proj__desc">A servo-driven four-legged walker with custom gait logic on Arduino — linkage geometry tuned for stability,
+        plus sensor input for obstacle-aware direction changes. The rig above is its digital twin.</p>
+        <div class="proj__tags mono"><span>Arduino</span><span>Servo control</span><span>Gait logic</span></div>
+        <div class="proj__foot mono"><span>Personal build</span><span class="proj__cta">OPEN PROJECT ↗</span></div>
+      </a>
+    </article>
+
+    <article class="proj reveal" data-cat="fabrication" style="--d:.16s">
+      <a class="proj__link" href="https://github.com/krushnakantpanda/wirelesscncplotter" target="_blank" rel="noopener" aria-label="Open wireless CNC plotter repository on GitHub">
+        <div class="proj__top mono"><span>P—03</span><span class="proj__cat">FABRICATION</span></div>
+        <div class="proj__art" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect class="draw" x="24" y="22" width="152" height="76" rx="4"/>
+            <path class="draw" d="M24 40 h152"/>
+            <rect class="draw" x="86" y="30" width="28" height="58" rx="3"/>
+            <path class="draw" d="M100 88 v14"/>
+            <path class="draw squiggle" d="M48 66 q10 -18 20 0 t20 0 t20 0"/>
+            <circle class="draw" cx="100" cy="104" r="3"/>
+            <path class="draw blink" d="M164 14 q4 -8 10 -4 M170 8 q2 -6 8 -4"/>
+          </svg>
+        </div>
+        <h3 class="proj__title">Ink, meet G-code.</h3>
+        <p class="proj__sub mono">WIRELESS CNC PLOTTER · 2-AXIS</p>
+        <p class="proj__desc">A functional 2-axis plotter that draws vector art — frame, carriage and pen holder modeled in SolidWorks,
+        motion control + G-code parsing running on Arduino, with wireless job transfer.</p>
+        <div class="proj__tags mono"><span>Arduino</span><span>SolidWorks</span><span>G-code</span></div>
+        <div class="proj__foot mono"><span>Personal build</span><span class="proj__cta">OPEN PROJECT ↗</span></div>
+      </a>
+    </article>
+
+    <article class="proj reveal" data-cat="robotics" style="--d:.24s">
+      <a class="proj__link" href="https://github.com/krushnakantpanda/Autonomous-Mopping-Robot-" target="_blank" rel="noopener" aria-label="Open Autonomous Mopping Robot repository on GitHub">
+        <div class="proj__top mono"><span>P—04</span><span class="proj__cat">ROBOTICS</span></div>
+        <div class="proj__art" aria-hidden="true">
+          <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle class="draw" cx="100" cy="64" r="34"/>
+            <circle class="draw" cx="100" cy="64" r="10"/>
+            <path class="draw" d="M100 30 v-8 m0 84 v8 M66 64 h-8 m84 0 h8"/>
+            <path class="draw squiggle" d="M30 100 q10 -8 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"/>
+            <path class="draw" d="M136 40 q10 -6 18 2"/>
+          </svg>
+        </div>
+        <h3 class="proj__title">Clean floors, no hands.</h3>
+        <p class="proj__sub mono">AUTONOMOUS MOPPING ROBOT</p>
+        <p class="proj__desc">A ground-cleaning robot that navigates a room and mops on its own — custom drive + cloth-dispensing
+        mechanism for even coverage, path-planning on Arduino to avoid re-mopping the same spot.</p>
+        <div class="proj__tags mono"><span>Arduino</span><span>Path planning</span><span>Mechanisms</span></div>
+        <div class="proj__foot mono"><span>Personal build</span><span class="proj__cta">OPEN PROJECT ↗</span></div>
+      </a>
+    </article>
+  </div>
+
+  <p class="work__more reveal mono">Built with care. Always a work in progress. <a href="https://github.com/krushnakantpanda" target="_blank" rel="noopener">More on GitHub ↗</a></p>
+</section>
+
+<!-- ═══════════ 03 · EXPERIENCE ═══════════ -->
+<section class="section exp" id="experience">
+  <div class="exp__layout">
+    <header class="exp__head">
+      <div class="section__label mono reveal"><i>03</i>/ INDUSTRY EXPERIENCE</div>
+      <h2 class="section__title reveal" style="--d:.1s">Beyond the lab.<br/>Onto the <em class="stroke">floor</em>.</h2>
+      <p class="section__lede reveal" style="--d:.2s">Learning where it counts — around refinery-scale machines,
+      alongside engineers, following real safety protocol.</p>
+      <div class="exp__badges mono reveal" style="--d:.3s"><span>AUTOMATION</span><span>MATERIAL HANDLING</span><span>PPE CERTIFIED</span></div>
+    </header>
+
+    <div class="exp__rail">
+      <article class="xp reveal">
+        <div class="xp__meta mono"><span class="xp__date">MAY — JUN 2026</span><span class="xp__kind">INTERNSHIP</span></div>
+        <h3 class="xp__title">HPCL–Mittal Energy Ltd <em>(HMEL)</em></h3>
+        <p class="xp__role">Manufacturing Engineer Intern — Automated Storage &amp; Retrieval System, Guru Gobind Singh Refinery, Bathinda</p>
+        <ul class="xp__list">
+          <li>Completed a 45-day engineering internship in the ASRS division of one of India’s largest refineries.</li>
+          <li>Worked on the <strong>Rail Guided Vehicle (RGV)</strong> project — automated high-speed pallet transfer on rails.</li>
+          <li>Documented core subsystems: traction drives, gearboxes, guide-rail &amp; wheel assemblies, encoders, safety interlocks.</li>
+          <li>Assisted engineers with assembly support, inspection, testing and preventive maintenance of RGV + stacker crane equipment.</li>
+          <li>Hands-on exposure to PLC-controlled material flow and sensor-based positioning under refinery safety protocol.</li>
+        </ul>
+        <div class="xp__tags mono"><span>RGV</span><span>STACKER CRANES</span><span>ASRS</span><a href="#" data-cert-open="hmel">CERTIFICATE ↗</a></div>
+      </article>
+
+      <article class="xp reveal" style="--d:.1s">
+        <div class="xp__meta mono"><span class="xp__date">2024 — 2025</span><span class="xp__kind">CAMPUS</span></div>
+        <h3 class="xp__title">KIIT University <em>Fest Crew</em></h3>
+        <p class="xp__role">Event Organizer &amp; Anchor, Bhubaneswar</p>
+        <ul class="xp__list">
+          <li>Anchored college fest events on stage, managing flow and holding large audiences.</li>
+          <li>Coordinated logistics and team activity as an official organizer for a fest segment.</li>
+          <li>Ran end-to-end promotional campaigns across social media and on-campus channels.</li>
+        </ul>
+        <div class="xp__tags mono"><span>PUBLIC SPEAKING</span><span>COORDINATION</span><span>LEADERSHIP</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 04 · ABOUT ═══════════ -->
+<section class="section about" id="about">
+  <div class="about__layout">
+    <div class="about__visual reveal">
+      <figure class="about__photo" data-tilt>
+        <img src="assets/img/profile.jpg" alt="Krushnakanta Panda at a greenery wall, KIIT" />
+        <span class="pcard__corner pcard__corner--tl"></span>
+        <span class="pcard__corner pcard__corner--br"></span>
+      </figure>
+      <div class="about__caption mono">STAY<br/><b>CURIOUS.</b><span>BASED IN ODISHA, IN</span></div>
+    </div>
+
+    <div class="about__content">
+      <div class="section__label mono reveal"><i>04</i>/ A LITTLE ABOUT ME</div>
+      <h2 class="section__title reveal" style="--d:.1s">An engineer’s mindset.<br/>A tinkerer’s <em class="stroke-alt">hands</em>.</h2>
+      <p class="reveal" style="--d:.2s">I’m a B.Tech <strong>Mechatronics Engineering</strong> student at
+      <strong>KIIT University, Bhubaneswar</strong>, from Bhadrak, Odisha. I like understanding how things
+      move — and then building the thing that moves them.</p>
+      <p class="reveal" style="--d:.25s">My sweet spot is where <strong>mechanical design, electronics and
+      programming</strong> meet. From CAD models and G-code to servo gaits and refinery-scale material handling,
+      I’m drawn to practical engineering and the next prototype on the bench.</p>
+
+      <div class="about__edu reveal" style="--d:.3s">
+        <div class="edu">
+          <div class="edu__top mono"><span>B.TECH · MECHATRONICS ENGINEERING</span><span>2024 — 2028</span></div>
+          <p>Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar <b class="edu__gpa">CGPA 8.1</b></p>
+        </div>
+      </div>
+
+      <h3 class="about__tooltitle mono reveal" style="--d:.35s">/// THE TOOLS BEHIND THE IDEAS</h3>
+      <div class="toolkit reveal" style="--d:.4s">
+        <div class="tool">
+          <div class="tool__num mono">01 / DESIGN</div>
+          <h4>Mechanical design</h4>
+          <p>From first sketch to final assembly.</p>
+          <div class="mono tool__tags"><span>SolidWorks</span><span>AutoCAD</span><span>MATLAB</span></div>
+        </div>
+        <div class="tool">
+          <div class="tool__num mono">02 / MOTION</div>
+          <h4>Robotics &amp; automation</h4>
+          <p>Bringing mechanical systems to life.</p>
+          <div class="mono tool__tags"><span>ASRS</span><span>RGV</span><span>PLC fundamentals</span><span>Servo gait</span></div>
+        </div>
+        <div class="tool">
+          <div class="tool__num mono">03 / INTELLIGENCE</div>
+          <h4>Embedded &amp; code</h4>
+          <p>Small boards. Real machines.</p>
+          <div class="mono tool__tags"><span>Arduino C/C++</span><span>Embedded C</span><span>8051</span><span>G-code</span></div>
+        </div>
+        <div class="tool">
+          <div class="tool__num mono">04 / WORKSHOP</div>
+          <h4>Manufacturing floor</h4>
+          <p>Chips, sparks and tolerances.</p>
+          <div class="mono tool__tags"><span>CNC machining</span><span>Lathe</span><span>Welding</span><span>Foundry</span></div>
+        </div>
+      </div>
+
+      <div class="about__hobbies mono reveal" style="--d:.45s">
+        <span>OFF-DUTY:</span> GAMING · EXPLORING NEW SOFTWARE · HARDWARE REPAIR · ELECTRONICS TINKERING
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 05 · CERTIFICATIONS ═══════════ -->
+<section class="section certs" id="certifications">
+  <header class="section__head">
+    <div class="section__label mono reveal"><i>05</i>/ CERTIFICATIONS &amp; RECOGNITION</div>
+    <h2 class="section__title reveal" style="--d:.1s">Paper trail of <em class="stroke">skills</em>.</h2>
+    <p class="section__lede reveal" style="--d:.2s">Original documents — <strong>tap any certificate to preview it</strong>, or grab the PDF for your records.</p>
+  </header>
+
+  <div class="certs__grid">
+    <article class="cert reveal" style="--d:0s">
+      <button class="cert__preview" data-cert-open="hmel" aria-label="Preview HMEL internship certificate">
+        <img src="assets/certs/hmel_thumb.jpg" alt="Preview of HMEL vocational internship certificate for Krushnakanta Panda" loading="lazy" />
+        <span class="cert__zoom mono" aria-hidden="true">⤢ PREVIEW</span>
+      </button>
+      <div class="cert__body">
+        <div class="mono cert__chip cert__chip--amber">INTERNSHIP</div>
+        <p class="cert__issuer">HPCL–Mittal Energy Limited</p>
+        <h3 class="cert__title">Vocational Internship Training — “Overview of ASRS”</h3>
+        <p class="cert__meta mono">GURU GOBIND SINGH REFINERY · 05 MAY – 20 JUN 2026</p>
+        <div class="cert__actions mono">
+          <button data-cert-open="hmel">PREVIEW ⤢</button>
+          <a href="assets/certs/HMEL-Internship-Certificate-Krushnakanta-Panda.pdf" target="_blank" rel="noopener">PDF ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cert reveal" style="--d:.1s">
+      <button class="cert__preview" data-cert-open="udemy" aria-label="Preview Udemy 8051 microcontroller certificate">
+        <img src="assets/certs/udemy_thumb.jpg" alt="Preview of Udemy certificate 8051 Microcontroller Embedded C and Assembly Language" loading="lazy" />
+        <span class="cert__zoom mono" aria-hidden="true">⤢ PREVIEW</span>
+      </button>
+      <div class="cert__body">
+        <div class="mono cert__chip">EMBEDDED</div>
+        <p class="cert__issuer">Udemy · Smart Logic Academy</p>
+        <h3 class="cert__title">8051 Microcontroller — Embedded C &amp; Assembly Language</h3>
+        <p class="cert__meta mono">9.5 TOTAL HOURS · COMPLETED 15 MAR 2026</p>
+        <div class="cert__actions mono">
+          <button data-cert-open="udemy">PREVIEW ⤢</button>
+          <a href="assets/certs/Udemy-8051-Microcontroller-Embedded-C-Krushnakanta-Panda.pdf" target="_blank" rel="noopener">PDF ↗</a>
+          <a href="https://ude.my/UC-715448c4-53d5-4a48-ae94-63b7afb8d6da" target="_blank" rel="noopener">VERIFY ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cert reveal" style="--d:.2s">
+      <button class="cert__preview" data-cert-open="matlab" aria-label="Preview NIELIT MATLAB and Simulink certificate">
+        <img src="assets/certs/matlab_thumb.jpg" alt="Preview of NIELIT Calicut certificate Introduction to MATLAB and Simulink" loading="lazy" />
+        <span class="cert__zoom mono" aria-hidden="true">⤢ PREVIEW</span>
+      </button>
+      <div class="cert__body">
+        <div class="mono cert__chip cert__chip--blue">SIMULATION</div>
+        <p class="cert__issuer">NIELIT Calicut · MeitY, Govt. of India</p>
+        <h3 class="cert__title">Introduction to MATLAB &amp; Simulink</h3>
+        <p class="cert__meta mono">5 DAYS / ONLINE · CERT NO. OLC 47704 · JAN 2026</p>
+        <div class="cert__actions mono">
+          <button data-cert-open="matlab">PREVIEW ⤢</button>
+          <a href="assets/certs/NIELIT-MATLAB-Simulink-Krushnakanta-Panda.pdf" target="_blank" rel="noopener">PDF ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════ 06 · CONTACT ═══════════ -->
+<section class="section contact" id="contact">
+  <div class="contact__inner">
+    <div class="section__label mono reveal"><i>06</i>/ WHAT’S NEXT? · OPEN TO OPPORTUNITIES</div>
+    <h2 class="contact__title reveal" style="--d:.1s">Let’s build something<br/>that <em class="stroke">moves</em>.</h2>
+    <p class="contact__lede reveal" style="--d:.2s">Have an internship, an engineering role, or a robot that needs a brain?
+    I’d love to hear what you’re working on.</p>
+    <a class="contact__mail reveal" style="--d:.3s" href="mailto:krishnakantpanda25@gmail.com?subject=Engineering%20opportunity%20%7C%20Krushnakanta%20Panda" data-magnetic>
+      krishnakantpanda25<span>@</span>gmail.com
+    </a>
+    <div class="contact__cta reveal" style="--d:.4s">
+      <a href="https://github.com/krushnakantpanda" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic>GitHub<span class="btn__arr">↗</span></a>
+      <a href="assets/Krushnakanta-Panda-Resume.pdf" class="btn btn--accent" download data-magnetic>Get my résumé<span class="btn__arr">⇩</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="marquee marquee--foot" aria-hidden="true">
+    <div class="marquee__track" data-marquee>
+      <span>DESIGNED &amp; BUILT BY KRUSHNAKANTA PANDA</span><i>◆</i><span>MECHATRONICS · KIIT UNIVERSITY</span><i>◆</i><span>BHADRAK → BHUBANESWAR</span><i>◆</i><span>MACHINES THAT MOVE</span><i>◆</i>
+    </div>
+  </div>
+  <div class="footer__bar mono">
+    <span>© 2026 KP · ALL SYSTEMS NOMINAL</span>
+    <span id="footClock" aria-hidden="true">—</span>
+    <button id="toTop">BACK TO TOP ↑</button>
+  </div>
+</footer>
+
+<!-- ═══════════ CERT LIGHTBOX ═══════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" aria-hidden="true">
+  <div class="lightbox__backdrop" data-cert-close></div>
+  <div class="lightbox__panel">
+    <div class="lightbox__top mono">
+      <span id="lbTitle">CERTIFICATE</span>
+      <div class="lightbox__actions">
+        <a id="lbPdf" href="#" target="_blank" rel="noopener">OPEN PDF ↗</a>
+        <button id="lbClose" aria-label="Close preview">CLOSE ✕</button>
+      </div>
+    </div>
+    <div class="lightbox__stage">
+      <img id="lbImg" src="" alt="Full certificate document" />
+    </div>
+    <div class="lightbox__foot mono" id="lbMeta">—</div>
+  </div>
+</div>
+
+<script src="js/robodog.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
